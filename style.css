@@ -25,3 +25,8 @@ header {
     padding: 20px 16px;
     background-color: rgba(211, 211, 211, 0.514);
 }
+
+header > h1 {
+    color: grey;
+    text-align: center;
+}

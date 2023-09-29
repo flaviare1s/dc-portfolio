@@ -6,6 +6,8 @@
 }
 
 html {
+    background: lightgray url(imagens/background.jpg) no-repeat fixed;
+    background-position: cover;
     scroll-behavior: smooth;
 }
 
@@ -21,5 +23,5 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px 16px;
-    background-color: lightblue;
+    background-color: rgba(211, 211, 211, 0.514);
 }

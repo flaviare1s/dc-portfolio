@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 16px;
+    }
+    
     main {
         height: 75vh;
         display: flex;
@@ -8,12 +14,6 @@
         align-items: center;
         gap: 50px;
         padding: 20px;
-    }
-    
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 16px;
     }
     
     #imagem {
@@ -32,6 +32,12 @@
         list-style-type: none;
     }
     
+    menu > ul > li {
+        background-color: transparent;
+        margin: auto;
+        border: none;
+        padding: 10px;
+    }
     
     menu > ul > li > a {
         padding: 10px;

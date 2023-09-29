@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+@media screen and(min-width: 768px) {
+    main {
+        height: 75vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 50px;
+        padding: 20px;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 16px;
+    }
+    
+    #imagem {
+        border: 3px solid gray;
+        width: 300px;
+        height: 300px;
+        margin-left: 50px;
+        border-radius: 10px;
+    }
+    
+    menu > ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+        list-style-type: none;
+    }
+    
+    
+    menu > ul > li > a {
+        padding: 10px;
+        text-decoration: none;
+        color: rgb(104, 104, 104);
+    }
+    
+    menu > ul > li > a:hover {
+        text-decoration: underline;
+        background-color: grey;
+        color: white;
+        border-radius: 30px;
+    }
+    
+}

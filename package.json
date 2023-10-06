@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "build-tailwind": "npx tailwindcss -i style.css -o style.tailwind.css --watch",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "tailwindcss": "^3.3.3",
     "vite": "^4.4.5"
   }
 }

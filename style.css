@@ -1,4 +1,6 @@
-@charset "UTF-8";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
     margin: 0px;

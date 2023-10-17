@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+
 
 * {
     margin: 0px;
@@ -12,8 +12,8 @@
 
 html, body {
     background: lightgray url(/imagens/background.jpg) no-repeat fixed;
-    background-position: cover;
-    scroll-behavior: smooth;
+    background-size: cover;
+    overflow: hidden;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 header {
     background-color: rgba(211, 211, 211, 0.575);
     padding: 10px;
+    align-items: center;
 }
 
 menu {
@@ -75,6 +76,7 @@ header > h1 {
     text-align: center;
     margin: auto;
     margin-bottom: 30px;
+    font-size: 2em;
 }
 
 #imagem {
@@ -83,6 +85,7 @@ header > h1 {
     height: 300px;
     margin-left: 50px;
     border-radius: 10px;
+    display: none;
 }
 
 
@@ -92,7 +95,7 @@ footer {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 700px) {
   header {
       display: flex;
       justify-content: space-between;
@@ -114,6 +117,7 @@ footer {
       height: 300px;
       margin-left: 50px;
       border-radius: 10px;
+      display: inline;
   }
   
   menu > ul {
@@ -150,7 +154,8 @@ footer {
   
 }
 
-*/
+
+
 
 
 

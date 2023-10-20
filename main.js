@@ -95,8 +95,11 @@ main();
 */
 
 function main() {
-    const nome = prompt('Digite um nome')
-    console.log(nome.toUpperCase())
+    const nome = prompt('Digite um nome usando letras minúsculas.')
+    if (nome.match(/[a-z]/)) {
+        console.log(nome.toUpperCase())
+    } else {
+        console.log('O que você digitou é inválido!')
+    }
 }
-    
 main();

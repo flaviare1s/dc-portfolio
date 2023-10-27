@@ -114,11 +114,11 @@ function maior() {
     let n1 = Number(prompt('Digite um número!'));
     let n2 = Number(prompt('Digite outro número!'))
     if(n1 === n2) {
-        alert('Você digitou dois números iguais')
+        console.log('Você digitou dois números iguais')
     } else if(n1 > n2) {
-        alert(`O número ${n1} é o maior valor que você digitou.`)
+        console.log(`O número ${n1} é o maior valor que você digitou.`)
     } else {
-        alert(`O número ${n2} é o maior valor que você digitou.`)
+        console.log(`O número ${n2} é o maior valor que você digitou.`)
     }
 }
 maior()
@@ -130,6 +130,17 @@ Calculadora simples: Crie uma calculadora simples que permita ao usuário escolh
 
 /*
 Verificação Par/Ímpar: Solicite ao usuário que insira um número e escreva um programa que determine se o número é ímpar ou par. Exiba uma mensagem apropriada.
+*/
+/*
+function parImpar() {
+    let n = Number(prompt('Digite um número'))
+    if(n % 2 === 0) {
+        console.log('O número que você digitou é PAR!')
+    } else {
+        console.log('O numero que você digitou é ÍMPAR!')
+    }
+}
+parImpar()
 */
 
 /*

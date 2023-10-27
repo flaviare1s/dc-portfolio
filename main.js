@@ -146,3 +146,14 @@ parImpar()
 /*
 Idade para dirigir: pergunte ao usuário sua idade e informe se ele é elegível para obter uma carteira de motorista.
 */
+/*
+function main() {
+    let idade = Number(prompt('Digite a sua idade'))
+    if(idade >= 18) {
+        console.log('Você está apto a tirar a carteira de motorista!')
+    } else {
+        console.log('Você não tem idade suficiente para tirar a carteira de habilitação!')
+    }
+}
+main()
+*/

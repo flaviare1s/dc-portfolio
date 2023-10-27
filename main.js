@@ -109,6 +109,20 @@ main();
 /* 
 Maior de dois números: Peça ao usuário para inserir dois números e, em seguida, escreva um programa que determine qual dos números é o maior.
 */
+/*
+function maior() {
+    let n1 = Number(prompt('Digite um número!'));
+    let n2 = Number(prompt('Digite outro número!'))
+    if(n1 === n2) {
+        alert('Você digitou dois números iguais')
+    } else if(n1 > n2) {
+        alert(`O número ${n1} é o maior valor que você digitou.`)
+    } else {
+        alert(`O número ${n2} é o maior valor que você digitou.`)
+    }
+}
+maior()
+*/
 
 /*
 Calculadora simples: Crie uma calculadora simples que permita ao usuário escolher entre operações de adição, subtração, multiplicação e divisão. Peça ao usuário para inserir dois números e a operação desejada, depois calcule e exiba o resultado.

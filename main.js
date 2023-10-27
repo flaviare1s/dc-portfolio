@@ -94,6 +94,7 @@ function main() {
 main();
 */
 
+/*
 function main() {
     const nome = prompt('Digite um nome usando letras minúsculas.')
     if (nome.match(/[a-z]/)) {
@@ -103,3 +104,20 @@ function main() {
     }
 }
 main();
+*/
+
+/* 
+Maior de dois números: Peça ao usuário para inserir dois números e, em seguida, escreva um programa que determine qual dos números é o maior.
+*/
+
+/*
+Calculadora simples: Crie uma calculadora simples que permita ao usuário escolher entre operações de adição, subtração, multiplicação e divisão. Peça ao usuário para inserir dois números e a operação desejada, depois calcule e exiba o resultado.
+*/
+
+/*
+Verificação Par/Ímpar: Solicite ao usuário que insira um número e escreva um programa que determine se o número é ímpar ou par. Exiba uma mensagem apropriada.
+*/
+
+/*
+Idade para dirigir: pergunte ao usuário sua idade e informe se ele é elegível para obter uma carteira de motorista.
+*/

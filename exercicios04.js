@@ -51,14 +51,30 @@ function main() {
 main()
 */
 
-// Exercício 05:
+// Exercício 04:
 // Dado o array [2, 4, 6, 15, 7, 9, 11, 300], gere um array somente com os números pares.
-
+/*
 function main() {
     const array = [2, 4, 6, 15, 7, 9, 11, 300]
     const arrayPares = array.filter((item) => {
             return item % 2 === 0
     })
     console.log(arrayPares)
+}
+main()
+*/
+
+// Exercício 05:
+// Dado o seguinte array: [300, 502, 501, 437, 991, 301, 1, -50, 3000], retornem quantos numeros abaixo de 501 existem.
+
+function main() {
+    const array = [300, 502, 501, 437, 991, 301, 1, -50, 3000]
+    const arrayReduce = array.reduce((acc, item) => {
+        if (item < 501) {
+            return acc + 1
+        }
+        return acc
+    }, 0)
+    console.log(arrayReduce)
 }
 main()

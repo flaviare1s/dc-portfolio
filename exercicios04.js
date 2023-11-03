@@ -50,3 +50,17 @@ function main() {
 }
 main()
 */
+
+// Exercício 05:
+// Dado o array [2, 4, 6, 15, 7, 9, 11, 300], gere um array somente com os números pares.
+
+function main() {
+    const array = [2, 4, 6, 15, 7, 9, 11, 300]
+    const arrayPares = array.filter((item) => {
+        if (item % 2 === 0) {
+            return item
+        }
+    })
+    console.log(arrayPares)
+}
+main()

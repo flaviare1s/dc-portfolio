@@ -57,9 +57,7 @@ main()
 function main() {
     const array = [2, 4, 6, 15, 7, 9, 11, 300]
     const arrayPares = array.filter((item) => {
-        if (item % 2 === 0) {
-            return item
-        }
+            return item % 2 === 0
     })
     console.log(arrayPares)
 }

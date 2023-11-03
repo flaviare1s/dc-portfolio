@@ -24,7 +24,7 @@ main()
 // Exercício 02:
 
 // Dado o array [2, 4, 6, 15, 7, 9, 11, 300], retorne outro array somente com os números  menores do que 4 ou maiores do que 9:
-
+/*
 function main() {
     const array = [2, 4, 6, 15, 7, 9, 11, 300]
     const arrayFiltrado = array.filter((item) => {
@@ -33,3 +33,20 @@ function main() {
     console.log(arrayFiltrado)
 }
 main()
+*/
+
+
+// reduce calcula um resultado baseado nos itens do array e gera um array diferente.
+// Exercício com reduce:
+// Exercício 03:
+// Dado o array [2, 4, 6, 15, 7, 9, 11, 300], retorne a soma dos numeros deste array.
+/*
+function main() {
+    const array = [2, 4, 6, 15, 7, 9, 11, 300]
+    const soma = array.reduce((acc, item) => {
+        return acc + item
+    }, 0)
+    console.log(soma)
+}
+main()
+*/

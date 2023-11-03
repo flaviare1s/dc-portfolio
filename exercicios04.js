@@ -65,8 +65,8 @@ main()
 */
 
 // Exercício 05:
-// Dado o seguinte array: [300, 502, 501, 437, 991, 301, 1, -50, 3000], retornem quantos numeros abaixo de 501 existem.
-
+// Dado o seguinte array: [300, 502, 501, 437, 991, 301, 1, -50, 3000], retorne quantos números abaixo de 501 existem.
+/*
 function main() {
     const array = [300, 502, 501, 437, 991, 301, 1, -50, 3000]
     const arrayReduce = array.reduce((acc, item) => {
@@ -78,3 +78,4 @@ function main() {
     console.log(arrayReduce)
 }
 main()
+*/

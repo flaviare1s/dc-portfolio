@@ -72,8 +72,3 @@ function ordemAlfabetica() {
 }
 
 ordemAlfabetica()
-
-
-
-
-

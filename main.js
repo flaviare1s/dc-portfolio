@@ -1,77 +1,101 @@
 import "./style.css";
 
-// Exiba no console uma lista dos nomes dos jogos do array abaixo;
-// Filtre os jogos que estão abaixo de $120 e exiba a lista no console;
-// Exiba no console o valor total da soma de todos os jogos acima de $120;
-// Exiba a lista de jogos em ordem alfabética.
+const salas = [
+    {
+      turma: "A",
+      alunos: [
+        {
+          nota: 10,
+        },
+        {
+          nota: 7,
+        },
+        {
+          nota: 1,
+        },
+      ],
+    },
+    {
+      turma: "B",
+      alunos: [
+        {
+          nota: 8,
+        },
+        {
+          nota: 10,
+        },
+        {
+          nota: 7.5,
+        },
+        {
+          nota: 10,
+        },
+        {
+          nota: 2,
+        },
+        {
+          nota: 3,
+        },
+      ],
+    },
+    {
+      turma: "C",
+      alunos: [
+        {
+          nota: 4,
+        },
+        {
+          nota: 6,
+        },
+        {
+          nota: 7.5,
+        },
+        {
+          nota: 10,
+        },
+        {
+          nota: 5,
+        },
+      ],
+    },
+  ];
 
-// Dica: para quebrar linha, você pode usar dentro da string o caractere especial \n.
+  // Retorne um objeto em que a chave é o nome da turma e o valor é a média da turma:
 
-const jogos = [
-  { name: "Dark Souls III", price: 95.03 },
-  { name: "Shadow of the Tomb Raider", price: 101.19 },
-  { name: "Sekiro: Shadows Die Twice", price: 179.99 },
-  { name: "Resident Evil 2", price: 119.9 },
-  { name: "Death Stranding", price: 149.99 },
-];
+  function getMediaTurmas() {
+    const objetoDeSalas = salas.reduce((acc, item) => {
+        const somaNotas = item.alunos.reduce((acc, item) => {
+            return acc + item.nota
+            console.log(somaNotas)
+        },0)
+        const media = somaNotas / item.alunos.length
+        return {...acc, [item.turma]: media}
+    },{})
 
-function nomes() {
-  const nomesJogos = jogos.reduce((acc, jogo, index) => {
-    if (index !== 0) {
-      return acc + "," + jogo.name;
-    }
-
-    return acc + jogo.name;
-  }, "");
-  console.log(nomesJogos);
-  return nomesJogos
-}
-
-nomes();
+    return objetoDeSalas
+    
+  }
+  
+  getMediaTurmas()
 
 
-function precosAbaixo() {
-    const jogosAbaixoDe120 = jogos.filter((jogo) => {
-        return jogo.price < 120
-    })
-    console.log(jogosAbaixoDe120)
-} 
+  // Retorne a lista de salas ordenadas pela média, de maneira decrescente:
 
-precosAbaixo()
+  function main() {
+    const mediaTurmas = getMediaTurmas()
+    const turmasOrdenadas = salas.sort((a, b) => {
+        const mediaA = mediaTurmas[a.turma]
+        const mediaB = mediaTurmas[b.turma]
 
-
-function precosAcima() {
-    const jogosAcimaDe120 = jogos.filter((jogo) => {
-        return jogo.price > 120
-    })
-    return jogosAcimaDe120
-} 
-
-
-function somaPrecosAcima() {
-    const jogosAcimaDe120 = precosAcima()
-    const somaJogosAcimaDe120 = jogosAcimaDe120.reduce((acc, jogo) => {
-        return acc + jogo.price
-    },0)
-    console.log(somaJogosAcimaDe120)
-}
-
-somaPrecosAcima()
-
-function ordemAlfabetica() {
-    const sortedJogos = jogos.sort((a,b) => {
-        const nomeA = a.name.toUpperCase()
-        const nomeB = b.name.toUpperCase()
-
-        if (nomeA > nomeB) {
-            return 1
+        if (mediaA > mediaB) {
+            return -1
         }
-        return -1
+        return 1
     })
-    console.log(sortedJogos)
-}
-
-ordemAlfabetica()
+    console.log(turmasOrdenadas)
+    
+  }
+  main()
 
 
 

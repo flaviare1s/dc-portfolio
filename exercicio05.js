@@ -69,3 +69,21 @@ main()
 */
 
 // Exercício 4: Dado o mock anterior, ordene os carros por preço de maneira decrescente usando sort.
+function main() {
+    const cars = carsMock.body.data.cars
+    
+    const sortedCars = cars.sort((a, b) => {
+      const precoA = a.car_price
+      const precoB = b.car_price
+  
+      if (precoA < precoB) {
+        return 1
+      }
+  
+      return -1
+    });
+  
+    console.log(sortedCars)
+  }
+  
+  main()

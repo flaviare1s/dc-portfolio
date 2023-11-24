@@ -13,7 +13,6 @@
 html, body {
     background: lightgray url(/imagens/background.jpg) no-repeat fixed;
     background-size: cover;
-    overflow: hidden;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
 
 header {
     background-color: rgba(211, 211, 211, 0.575);
-    padding: 10px;
+    padding: 5px;
     align-items: center;
 }
 
@@ -152,6 +151,11 @@ footer {
       border-radius: 15px;
   }
   
+}
+
+#contador {
+    text-align: center;
+    align-items: center;
 }
 
 

@@ -12,12 +12,13 @@
 
 html, body {
     background: lightgray url(/imagens/background.jpg) no-repeat fixed;
-    background-size: cover;
+    background-size: cover; 
 }
 
 body {
     width: 100vw;
     height: 100vh;
+    background-color: lightgray;
 }
 
 header {

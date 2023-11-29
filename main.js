@@ -13,20 +13,23 @@ function mouseLocation() {
     mostrarY.innerHTML = y
 
     tela.addEventListener('click', () => {
-      const mousePosition = (x + y) / 2
-      console.log(mousePosition)
-      tela.style.backgroundColor = `rgb(${mousePosition}, ${mousePosition}, ${mousePosition})`
+      const red = (x / window.innerWidth) * 255
+      const green = (y / window.innerHeight) * 255
+
+      console.log(red, green)
+
+      tela.style.backgroundColor = `rgb(${red}, ${green}, 0)`
     })
   })
 }
 
 function main() {
+  document.addEventListener('DOMContentLoaded', () => {
     mouseLocation()
+  })
 }
 
-
 main()
-
 
 
 

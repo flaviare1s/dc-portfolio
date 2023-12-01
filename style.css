@@ -60,6 +60,10 @@ menu > ul > li > a:hover {
     border-radius: 30px;
 }
 
+.burger {
+    color: white;
+}
+
 main {
     height: 75vh;
     display: flex;
@@ -151,12 +155,18 @@ footer {
       color: white;
       border-radius: 15px;
   }
+
+  .burger {
+    display: none;
+  }
   
 }
 
 
 
-#mostrador {
+
+
+/* #mostrador {
     margin: 0px auto;
     width: 260px;
     display: flex;
@@ -182,7 +192,7 @@ footer {
     margin: 0px auto;
     border-radius: 50%;
     text-align: center;
-}
+} */
 
 
 

@@ -6,8 +6,11 @@ function mostrarMenu() {
 
   burgerMenu.addEventListener('click', () => {
     for (const linkMenu of linkMenus) {
-      linkMenu.style.display = 'block'
-    } 
+      if (linkMenu.style.display === 'block') {
+        linkMenu.style.display = 'none'
+      } else {
+        linkMenu.style.display = 'block'
+      }    } 
   })
 }
 

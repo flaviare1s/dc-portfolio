@@ -65,9 +65,6 @@ menu > ul > li > a:hover {
     cursor: pointer;
 }
 
-li.link {
-    display: none;
-}
 
 
 main {
@@ -166,6 +163,10 @@ footer {
   .burger {
     display: none;
     cursor: pointer;
+  }
+
+  .menu-projetos {
+    display: none;
   }
   
 }

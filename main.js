@@ -6,10 +6,10 @@ function mostrarMenu() {
 
   burgerMenu.addEventListener('click', () => {
     for (const linkMenu of linkMenus) {
-      if (linkMenu.style.display === 'block') {
-        linkMenu.style.display = 'none'
-      } else {
+      if (linkMenu.style.display === 'none') {
         linkMenu.style.display = 'block'
+      } else {
+        linkMenu.style.display = 'none'
       }    } 
   })
 }
